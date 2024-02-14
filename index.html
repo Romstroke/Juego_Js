@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Cachipún contra la máquina</title>
 </head>
+
 <body>
-    
+    <main>
+        <h1>¡Bienvenido al juego del Cachipún contra la máquina!</h1>
+        <!-- <form> -->
+        <!-- Descubrí que si quiero imprimir en un form, me falta el event prevent default -->
+        <label for="jugadas">Por favor, indica el número de intentos que deseas realizar</label>
+        <input id="jugadas" type="number" placeholder="1-5" min="1" max="5">
+        <button id="jugar">Jugar</button>
+        <!-- </form> -->
+        <section id="panelJuego">
+            <p>Número de intentos: <span id="intentosIngresados"></span>, presiona el botón "Jugar" para iniciar.</p>
+            <div id="armas">
+                <button id="piedra">Piedra</button>
+                <button id="papel">Papel</button>
+                <button id="tijera">Tijera</button>
+            </div>
+            <div id="resultados">
+                <!-- aqui se imprimen los resultados de cada intento -->
+
+            </div>
+        </section>
+    </main>
     <!-- script js -->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
